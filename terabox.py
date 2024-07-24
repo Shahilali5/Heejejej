@@ -32,14 +32,14 @@ if len(bot_token) == 0:
     exit(1)
 dump_id = os.environ.get('DUMP_CHAT_ID', '')
 if len(dump_id) == 0:
-    logging.error("7165556607")
+    logging.error("-1002249567471")
     exit(1)
 else:
     dump_id = int(dump_id)
 
 fsub_id = os.environ.get('FSUB_ID', '')
 if len(fsub_id) == 0:
-    logging.error("FSUB_ID variable is missing! Exiting now")
+    logging.error("-1002200259659")
     exit(1)
 else:
     fsub_id = int(fsub_id)

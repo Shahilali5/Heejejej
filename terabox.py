@@ -18,21 +18,21 @@ logging.basicConfig(level=logging.INFO)
 
 api_id = os.environ.get('TELEGRAM_API', '')
 if len(api_id) == 0:
-    logging.error("TELEGRAM_API variable is missing! Exiting now")
+    logging.error("17086875")
     exit(1)
 
 api_hash = os.environ.get('TELEGRAM_HASH', '')
 if len(api_hash) == 0:
-    logging.error("TELEGRAM_HASH variable is missing! Exiting now")
+    logging.error("4f76c0c6afe2fb6ad486cab7fcb79978")
     exit(1)
     
 bot_token = os.environ.get('BOT_TOKEN', '')
 if len(bot_token) == 0:
-    logging.error("BOT_TOKEN variable is missing! Exiting now")
+    logging.error("7487096070:AAGoPqv3RIJsluhmZemL2kWSrfeAsq0slAc")
     exit(1)
 dump_id = os.environ.get('DUMP_CHAT_ID', '')
 if len(dump_id) == 0:
-    logging.error("DUMP_CHAT_ID variable is missing! Exiting now")
+    logging.error("7165556607")
     exit(1)
 else:
     dump_id = int(dump_id)
@@ -53,8 +53,8 @@ async def start_command(client, message):
     await sticker_message.delete()
     user_mention = message.from_user.mention
     reply_message = f"ᴡᴇʟᴄᴏᴍᴇ, {user_mention}.\n\n🌟 ɪ ᴀᴍ ᴀ ᴛᴇʀᴀʙᴏx ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙᴏᴛ. sᴇɴᴅ ᴍᴇ ᴀɴʏ ᴛᴇʀᴀʙᴏx ʟɪɴᴋ ɪ ᴡɪʟʟ ᴅᴏᴡɴʟᴏᴀᴅ ᴡɪᴛʜɪɴ ғᴇᴡ sᴇᴄᴏɴᴅs ᴀɴᴅ sᴇɴᴅ ɪᴛ ᴛᴏ ʏᴏᴜ ✨."
-    join_button = InlineKeyboardButton("ᴊᴏɪɴ ❤️🚀", url="https://t.me/jetmirror")
-    developer_button = InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ ⚡️", url="https://t.me/hrishikesh2861")
+    join_button = InlineKeyboardButton("ᴊᴏɪɴ ❤️🚀", url="https://t.me/bjsbotmaker")
+    developer_button = InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ ⚡️", url="https://t.me/DevilMods444")
     reply_markup = InlineKeyboardMarkup([[join_button, developer_button]])
     await message.reply_text(reply_message, reply_markup=reply_markup)
 
@@ -77,7 +77,7 @@ async def handle_message(client, message: Message):
     is_member = await is_user_member(client, user_id)
 
     if not is_member:
-        join_button = InlineKeyboardButton("ᴊᴏɪɴ ❤️🚀", url="https://t.me/jetmirror")
+        join_button = InlineKeyboardButton("ᴊᴏɪɴ ❤️🚀", url="https://t.me/bjsbotmaker")
         reply_markup = InlineKeyboardMarkup([[join_button]])
         await message.reply_text("ʏᴏᴜ ᴍᴜsᴛ ᴊᴏɪɴ ᴍʏ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴍᴇ.", reply_markup=reply_markup)
         return
